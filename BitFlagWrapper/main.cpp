@@ -36,7 +36,7 @@ int main(int argc, char ** argv)
 	}
 	
 	// ※GetFlag関数は指定したビットが全て立っていなければ負になる。
-	// Notice : GetFlag Function returns false if not all specified bits are 0.
+	// Notice : GetFlag Function returns false if not all specified bits are 1.
 	if (bitFlag.GetFlag((unsigned char)0b00001110))
 	{
 		std::cout << "True" << std::endl;		
