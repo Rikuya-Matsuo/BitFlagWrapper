@@ -1,4 +1,4 @@
-#include "BitFlagUChar.h"
+﻿#include "BitFlagUChar.h"
 
 BitFlagUChar::~BitFlagUChar()
 {

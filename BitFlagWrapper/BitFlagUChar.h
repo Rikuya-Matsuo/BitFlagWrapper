@@ -1,6 +1,7 @@
-#pragma once
+ï»¿#pragma once
 
-// ‰SÒ‚Å‚àƒrƒbƒgƒtƒ‰ƒO‚ªˆµ‚¢‚â‚·‚­‚È‚é‚æ‚¤‚Éì‚Á‚½ƒ‰ƒbƒp[ƒNƒ‰ƒX
+// åˆå¿ƒè€…ã§ã‚‚ãƒ“ãƒƒãƒˆãƒ•ãƒ©ã‚°ãŒæ‰±ã„ã‚„ã™ããªã‚‹ã‚ˆã†ã«ä½œã£ãŸãƒ©ãƒƒãƒ‘ãƒ¼ã‚¯ãƒ©ã‚¹
+// Wrapper that enable even beginners to use bit flag easily.
 class BitFlagUChar
 {
 public:
@@ -8,8 +9,8 @@ public:
 	~BitFlagUChar();
 
 	////////////////////////////////////////////////////////////
-	// ‰‰ZqƒI[ƒo[ƒ[ƒh
-	//		ˆ—‘¬“x‚Ìã‚Å‚Í‚±‚ê‚ğg‚¤‚±‚Æ‚ªˆê”Ô–]‚Ü‚µ‚¢
+	// æ¼”ç®—å­ã‚ªãƒ¼ãƒãƒ¼ãƒ­ãƒ¼ãƒ‰
+	//		å‡¦ç†é€Ÿåº¦ã®ä¸Šã§ã¯ã“ã‚Œã‚’ä½¿ã†ã“ã¨ãŒä¸€ç•ªæœ›ã¾ã—ã„
 	// Operator overload
 	//		They are desirable way in processing speed.
 	////////////////////////////////////////////////////////////
@@ -21,18 +22,18 @@ public:
 	bool			operator == (unsigned char mask)	{ return mFlags == mask; }
 
 	////////////////////////////////////////////////////////////
-	// ŠÖ”ŒQ
+	// é–¢æ•°ç¾¤
 	// Functions
 	////////////////////////////////////////////////////////////
 	
-	// ƒZƒbƒ^[/Setter
-	//		•¡”‚Ìƒtƒ‰ƒO‚ğƒZƒbƒg‚·‚éê‡Amask‚ğˆø”‚Éæ‚é•û‚ğg‚¤‚±‚Æ‚ª–]‚Ü‚µ‚¢B
+	// ã‚»ãƒƒã‚¿ãƒ¼/Setter
+	//		è¤‡æ•°ã®ãƒ•ãƒ©ã‚°ã‚’ã‚»ãƒƒãƒˆã™ã‚‹å ´åˆã€maskã‚’å¼•æ•°ã«å–ã‚‹æ–¹ã‚’ä½¿ã†ã“ã¨ãŒæœ›ã¾ã—ã„ã€‚
 	//		When you set several Flags, taking mask as an argument is desireble.
 	void			SetFlag(int bitNumFromBottom, bool value);
 	void			SetFlag(unsigned char mask, bool value);
 
-	// ƒQƒbƒ^[/Getter
-	//		•¡”‚Ìƒtƒ‰ƒO‚ğæ“¾‚·‚éê‡Amask‚ğˆø”‚Éæ‚é•û‚ğg‚¤‚±‚Æ‚ª–]‚Ü‚µ‚¢B
+	// ã‚²ãƒƒã‚¿ãƒ¼/Getter
+	//		è¤‡æ•°ã®ãƒ•ãƒ©ã‚°ã‚’å–å¾—ã™ã‚‹å ´åˆã€maskã‚’å¼•æ•°ã«å–ã‚‹æ–¹ã‚’ä½¿ã†ã“ã¨ãŒæœ›ã¾ã—ã„ã€‚
 	//		When you set several Flags, taking mask as an argument is desireble.
 	unsigned char	GetBitFlag() { return mFlags; }
 	bool			GetFlag(int bitNumFromBottom);

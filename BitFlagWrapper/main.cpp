@@ -1,11 +1,11 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "BitFlagUChar.h"
 
 int main(int argc, char ** argv)
 {
 	BitFlagUChar bitFlag;
 
-	// g‚¢•û‚PFƒlƒCƒeƒBƒu‚ÈŠ´‚¶‚Åg‚¤
+	// ä½¿ã„æ–¹ï¼‘ï¼šãƒã‚¤ãƒ†ã‚£ãƒ–ãªæ„Ÿã˜ã§ä½¿ã†
 	// Usage 1 : Use like a normal bit flag.
 	unsigned char flag1 = 0x01;
 
@@ -20,7 +20,7 @@ int main(int argc, char ** argv)
 		std::cout << "False" << std::endl;
 	}
 
-	// g‚¢•û‚QFƒZƒbƒ^[EƒQƒbƒ^[‚ğg‚Á‚ÄA‘ã“üE•]‰¿‚·‚é
+	// ä½¿ã„æ–¹ï¼’ï¼šã‚»ãƒƒã‚¿ãƒ¼ãƒ»ã‚²ãƒƒã‚¿ãƒ¼ã‚’ä½¿ã£ã¦ã€ä»£å…¥ãƒ»è©•ä¾¡ã™ã‚‹
 	// Usage 2 : Use setter and getter for assignment and evaluation.
 	unsigned char flag2 = 0b00000110;
 
@@ -35,7 +35,7 @@ int main(int argc, char ** argv)
 		std::cout << "False" << std::endl;
 	}
 	
-	// ¦GetFlagŠÖ”‚Íw’è‚µ‚½ƒrƒbƒg‚ª‘S‚Ä—§‚Á‚Ä‚¢‚È‚¯‚ê‚Î•‰‚É‚È‚éB
+	// â€»GetFlagé–¢æ•°ã¯æŒ‡å®šã—ãŸãƒ“ãƒƒãƒˆãŒå…¨ã¦ç«‹ã£ã¦ã„ãªã‘ã‚Œã°è² ã«ãªã‚‹ã€‚
 	// Notice : GetFlag Function returns false if not all specified bits are 0.
 	if (bitFlag.GetFlag((unsigned char)0b00001110))
 	{
@@ -46,7 +46,7 @@ int main(int argc, char ** argv)
 		std::cout << "False" << std::endl;
 	}
 
-	// g‚¢•û‚RFƒrƒbƒgƒtƒ‰ƒO‚Ì’m¯‚ğg‚í‚¸‚ÉA‘ã“üE•]‰¿‚·‚é
+	// ä½¿ã„æ–¹ï¼“ï¼šãƒ“ãƒƒãƒˆãƒ•ãƒ©ã‚°ã®çŸ¥è­˜ã‚’ä½¿ã‚ãšã«ã€ä»£å…¥ãƒ»è©•ä¾¡ã™ã‚‹
 	// Usage 3 : Assign and evaluate without knowledge of bit flag.
 	int flagNum = 3;
 
